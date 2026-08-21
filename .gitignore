@@ -1,0 +1,5 @@
+.claude/
+_brain/
+*.py
+_v1/
+*-raw.png

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ketox Diet Pro — Títulos dos 10 módulos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde-profundo:#0F4022;
+  --verde-medio:#2E6B3C;
+  --creme:#FBF7EE;
+  --dourado:#C9982E;
+  --dourado-claro:#F0C054;
+  --fundo:#061A0E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{max-width:100%;overflow-x:hidden}
+body{
+  background:
+    radial-gradient(1200px 700px at 50% -10%, rgba(46,107,60,.35), transparent 65%),
+    var(--fundo);
+  color:var(--creme);
+  font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  padding:0 0 64px;
+}
+.wrap{width:100%;max-width:1560px;margin:0 auto;padding:0 24px}
+
+/* ---------- Cabecalho ---------- */
+header{padding:56px 0 40px;border-bottom:1px solid rgba(251,247,238,.10);margin-bottom:44px}
+.tag{
+  display:inline-block;font-size:11px;letter-spacing:.22em;font-weight:700;
+  color:var(--dourado-claro);text-transform:uppercase;margin-bottom:16px;
+  padding:6px 12px;border:1px solid rgba(201,152,46,.45);border-radius:999px;
+  background:rgba(201,152,46,.08);
+}
+h1{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;line-height:.95;
+  font-size:clamp(30px,5.2vw,60px);letter-spacing:.01em;color:var(--creme);
+}
+h1 span{
+  background:linear-gradient(92deg,var(--dourado) 0%,var(--dourado-claro) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sub{margin-top:14px;font-size:14px;line-height:1.6;color:rgba(251,247,238,.68);max-width:760px}
+.sub b{color:var(--creme);font-weight:600}
+.meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chip{
+  font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;
+  padding:7px 12px;border-radius:6px;background:rgba(46,107,60,.30);
+  border:1px solid rgba(46,107,60,.65);color:rgba(251,247,238,.85);
+}
+
+/* ---------- Grid ---------- */
+.grid{
+  display:grid;gap:34px 26px;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+@media (max-width:1279px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:939px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}}
+@media (max-width:599px){.grid{grid-template-columns:minmax(0,1fr);gap:38px}}
+@media (max-width:479px){
+  .tag{font-size:10px;letter-spacing:.14em;border-radius:8px}
+  header{padding:40px 0 30px;margin-bottom:32px}
+  .wrap{padding:0 18px}
+}
+
+.item{min-width:0}
+
+/* ---------- Card = arte final 1080x1350 (4/5) ---------- */
+.card{
+  position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;
+  border-radius:14px;container-type:inline-size;
+  border:1px solid rgba(251,247,238,.12);
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+  background:var(--verde-profundo);
+  isolation:isolate;
+}
+/* placeholder de imagem — sem foto real */
+.card .photo{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(70% 55% at 30% 22%, rgba(46,107,60,.85), transparent 62%),
+    radial-gradient(50% 45% at 82% 12%, rgba(201,152,46,.22), transparent 68%),
+    linear-gradient(168deg,#17542D 0%,#0F4022 46%,#08260F 100%);
+}
+.card .photo::after{
+  content:"";position:absolute;inset:0;opacity:.30;
+  background:
+    repeating-linear-gradient(45deg, rgba(251,247,238,.055) 0 2px, transparent 2px 9px),
+    repeating-linear-gradient(-45deg, rgba(0,0,0,.16) 0 1px, transparent 1px 7px);
+}
+.card .num{
+  position:absolute;top:0;right:3cqw;z-index:2;
+  font-family:"Bebas Neue",Impact,sans-serif;font-size:26cqw;line-height:.82;
+  color:rgba(251,247,238,.075);letter-spacing:-.02em;pointer-events:none;
+}
+.ph-label{
+  position:absolute;top:5.5cqw;left:5.5cqw;z-index:3;
+  display:flex;align-items:center;gap:.6em;
+  font-size:2.7cqw;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  color:rgba(251,247,238,.42);
+}
+.ph-label i{
+  width:2.6cqw;height:2.6cqw;display:block;border-radius:2px;
+  border:1px solid rgba(251,247,238,.42);
+}
+/* faixa de legibilidade + texto na base */
+.card .base{
+  position:absolute;left:0;right:0;bottom:0;z-index:4;
+  padding:22cqw 6cqw 6.5cqw;
+  background:linear-gradient(to top,
+    rgba(2,10,5,.97) 0%, rgba(3,14,7,.93) 30%,
+    rgba(4,18,9,.74) 56%, rgba(5,22,11,.32) 80%, rgba(6,26,14,0) 100%);
+}
+.kicker{
+  font-size:2.75cqw;font-weight:700;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--dourado-claro);margin-bottom:2.6cqw;line-height:1.35;
+}
+.title{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;
+  font-size:11.4cqw;line-height:.92;letter-spacing:.012em;
+  text-transform:uppercase;color:var(--creme);
+  text-wrap:balance;
+  text-shadow:0 2px 14px rgba(0,0,0,.55);
+}
+.title.two{font-size:10.2cqw}
+.title.long{font-size:9.1cqw}
+.rule{
+  width:14cqw;height:.9cqw;min-height:2px;margin-top:4cqw;border-radius:2px;
+  background:linear-gradient(90deg,var(--dourado) 0%,var(--dourado-claro) 100%);
+}
+
+/* ---------- Notas de aprovacao (fora da arte) ---------- */
+.notes{
+  margin-top:14px;padding:14px 16px;border-radius:10px;
+  background:rgba(251,247,238,.035);
+  border:1px solid rgba(251,247,238,.09);
+  border-left:3px solid var(--verde-medio);
+}
+.notes p{font-size:12.5px;line-height:1.62;color:rgba(251,247,238,.74);margin-bottom:10px}
+.notes p:last-child{margin-bottom:0}
+.notes strong{
+  display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dourado-claro);margin-bottom:4px;font-weight:700;
+}
+.notes .warn{
+  margin-top:10px;padding-top:10px;border-top:1px dashed rgba(201,152,46,.35);
+  color:rgba(251,247,238,.86);
+}
+
+/* ---------- Rodape ---------- */
+footer{
+  margin-top:56px;padding:26px 24px;border-radius:14px;
+  background:linear-gradient(135deg, rgba(201,152,46,.13), rgba(46,107,60,.16));
+  border:1px solid rgba(201,152,46,.42);
+}
+footer h2{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:26px;
+  letter-spacing:.02em;color:var(--dourado-claro);margin-bottom:10px;
+}
+footer p{font-size:13px;line-height:1.7;color:rgba(251,247,238,.82);max-width:900px;margin-bottom:10px}
+footer p:last-child{margin-bottom:0}
+footer ul{margin:6px 0 0 18px}
+footer li{font-size:13px;line-height:1.7;color:rgba(251,247,238,.78)}
+
+/* --- arte final inserida (Sofia) --- */
+.card--done{position:relative;overflow:hidden}
+.card--done .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.badge-done{position:absolute;top:10px;left:10px;z-index:3;
+  font-family:Montserrat,sans-serif;font-size:9px;font-weight:700;letter-spacing:.12em;
+  color:#0F4022;background:linear-gradient(135deg,#F0C054,#C9982E);
+  padding:5px 9px;border-radius:999px;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+
+/* ---------- Indice / atalhos ---------- */
+html{scroll-behavior:smooth}
+.toc{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 44px}
+.toc-label{
+  font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;
+  color:rgba(251,247,238,.42);margin-right:2px;
+}
+.toc a{
+  display:inline-flex;align-items:baseline;gap:9px;text-decoration:none;
+  font-size:12.5px;font-weight:600;letter-spacing:.03em;color:rgba(251,247,238,.88);
+  padding:9px 15px;border-radius:999px;background:rgba(46,107,60,.30);
+  border:1px solid rgba(46,107,60,.65);transition:background .18s,border-color .18s,color .18s;
+}
+.toc a:hover,.toc a:focus-visible{
+  background:rgba(201,152,46,.15);border-color:rgba(201,152,46,.55);color:var(--dourado-claro);
+}
+.toc a em{
+  font-style:normal;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(251,247,238,.50);
+}
+
+/* ---------- Secoes ---------- */
+.section{scroll-margin-top:20px}
+.section + .section{margin-top:64px}
+.section-head{
+  margin-bottom:28px;padding-bottom:16px;
+  border-bottom:1px solid rgba(251,247,238,.10);
+}
+h2.section-title{
+  font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;line-height:1;
+  font-size:clamp(24px,3.6vw,38px);letter-spacing:.02em;color:var(--creme);
+}
+h2.section-title span{
+  background:linear-gradient(92deg,var(--dourado) 0%,var(--dourado-claro) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.section-sub{margin-top:10px;font-size:13.5px;line-height:1.65;color:rgba(251,247,238,.66);max-width:820px}
+.section-sub b{color:var(--creme);font-weight:600}
+
+/* ---------- Banners de topo 1920x800 ---------- */
+.banners{display:flex;flex-direction:column;gap:46px}
+.banner-item{min-width:0}
+.banner-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:13px}
+.banner-num{
+  font-family:"Bebas Neue",Impact,sans-serif;font-size:23px;line-height:1;
+  letter-spacing:.05em;color:var(--dourado-claro);
+}
+.chip.chip-sm{font-size:10px;padding:6px 10px;letter-spacing:.10em}
+.card.card--wide{aspect-ratio:1920/800}
+.card.card--wide .badge-done{top:12px;left:12px}
+
+.notes.notes--wide{
+  display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1.35fr);
+  gap:0 28px;padding:18px 20px;border-left-color:var(--dourado);
+}
+.notes--wide > *{min-width:0}
+.notes--wide p{margin-bottom:0}
+@media (max-width:1023px){
+  .notes.notes--wide{grid-template-columns:minmax(0,1fr);gap:0}
+  .notes--wide p{margin-bottom:12px}
+  .notes--wide > *:not(:last-child){margin-bottom:12px}
+}
+.copy-lines{margin-top:1px}
+.copy-lines span{display:block}
+.copy-lines .cl1{
+  font-family:"Bebas Neue",Impact,sans-serif;font-size:20px;line-height:1.06;
+  letter-spacing:.035em;color:var(--creme);
+}
+.copy-lines .cl2{
+  font-size:15px;line-height:1.35;font-weight:500;font-style:italic;
+  color:var(--dourado-claro);margin-top:2px;
+}
+.copy-lines .cl3{
+  font-size:10.5px;line-height:1.4;letter-spacing:.19em;text-transform:uppercase;
+  font-weight:600;color:rgba(251,247,238,.62);margin-top:5px;
+}
+@media (max-width:599px){
+  /* o formato ja aparece no chip do cabecalho do item; o selo cobriria o titulo da arte */
+  .card.card--wide .badge-done{display:none}
+}
+@media (max-width:479px){
+  .banners{gap:36px}
+  .toc{gap:8px;margin-bottom:34px}
+  .toc a{font-size:11.5px;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="tag">Aprovação de títulos · Filipe França</span>
+  <h1>Ketox Diet Pro — Área de Membros<br><span>Banners de topo + títulos dos 10 módulos</span></h1>
+  <p class="sub">Esta página tem <b>duas partes</b>. Primeiro as <b>3 variações de banner de topo</b> (1920 x 800 px, medida oficial do Hotmart Club) — escolha uma. Depois os <b>10 banners de módulo</b> já aprovados (1080 x 1350 px). Todas as peças aparecem na proporção real.</p>
+  <div class="meta-row">
+    <span class="chip">3 banners de topo 1920×800</span>
+    <span class="chip">10 banners de módulo 1080×1350</span>
+    <span class="chip">Proporção real em tela</span>
+    <span class="chip">Tipografia única por peça</span>
+    <span class="chip">Paleta Ketox aprovada</span>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Atalhos da página">
+  <span class="toc-label">Nesta página</span>
+  <a href="#banners-topo">1 · Banners de topo <em>3 variações</em></a>
+  <a href="#banners-modulos">2 · Banners dos módulos <em>10 artes</em></a>
+</nav>
+
+<main>
+
+<section id="banners-topo" class="section">
+  <div class="section-head">
+    <h2 class="section-title">Banners de topo — <span>3 variações</span></h2>
+    <p class="section-sub">Formato final: <b>1920 x 800 px</b> (horizontal 2,4:1) — medida oficial do banner de topo do Hotmart Club. As três usam a mesma copy da Clara e o mesmo par de fontes dos banners de módulo; muda a linguagem visual. <b>Escolha uma</b> para o topo da área de membros.</p>
+  </div>
+
+  <div class="banners">
+  <article class="banner-item">
+    <div class="banner-head">
+      <span class="banner-num">Variação 1</span>
+      <span class="chip chip-sm">Boas-vindas / disponibilidade</span>
+      <span class="chip chip-sm">1920 × 800 px</span>
+    </div>
+    <div class="card card--wide card--done">
+      <img class="art" src="banners/banner-01.png" alt="Banner de topo 1 — Ketox Diet Pro, bem-vinda, já disponível" width="1920" height="800" loading="lazy">
+      <span class="badge-done">ARTE FINAL · 1920×800</span>
+    </div>
+    <div class="notes notes--wide">
+      <div class="note-block">
+        <strong>Copy</strong>
+        <div class="copy-lines">
+          <span class="cl1">KETOX DIET PRO</span>
+          <span class="cl2">bem-vinda</span>
+          <span class="cl3">JÁ DISPONÍVEL</span>
+        </div>
+      </div>
+      <p><strong>Estilo / referência de design</strong>Cromado dourado 3D, texto centralizado. Display em caixa alta com gradiente metálico e bisel, script dourado logo abaixo e linha de apoio em creme espaçado. Fundo verde profundo com textura de mármore, bokeh dourado e fitas metálicas nos cantos — referência de capa de lançamento premium.</p>
+      <p><strong>Justificativa</strong>Replica a hierarquia aprovada pelo Elton e traduz a marca em acolhimento — “bem-vinda” fala com o público feminino no primeiro segundo de posse, e “JÁ DISPONÍVEL” confirma que não há espera.</p>
+    </div>
+  </article>
+
+  <article class="banner-item">
+    <div class="banner-head">
+      <span class="banner-num">Variação 2</span>
+      <span class="chip chip-sm">Instigar a começar a assistir</span>
+      <span class="chip chip-sm">1920 × 800 px</span>
+    </div>
+    <div class="card card--wide card--done">
+      <img class="art" src="banners/banner-02.png" alt="Banner de topo 2 — O primeiro passo é dar o play, comece pelo módulo 01" width="1920" height="800" loading="lazy">
+      <span class="badge-done">ARTE FINAL · 1920×800</span>
+    </div>
+    <div class="notes notes--wide">
+      <div class="note-block">
+        <strong>Copy</strong>
+        <div class="copy-lines">
+          <span class="cl1">O PRIMEIRO PASSO</span>
+          <span class="cl2">é dar o play</span>
+          <span class="cl3">COMECE PELO MÓDULO 01</span>
+        </div>
+      </div>
+      <p><strong>Estilo / referência de design</strong>UI moderna com pills, texto à esquerda. Pill de marca no topo, título creme, script dourado e botão sólido com ícone de play; abaixo, quatro pills de formato (10 módulos, aulas em vídeo, áudios, livro completo). Foto de xícara fumegante e abacate sangrando pela direita.</p>
+      <p><strong>Justificativa</strong>Reduz a energia de ativação a uma única ação trivial (“dar o play”) e aponta o destino exato, eliminando a paralisia de escolha diante dos 10 módulos.</p>
+    </div>
+  </article>
+
+  <article class="banner-item">
+    <div class="banner-head">
+      <span class="banner-num">Variação 3</span>
+      <span class="chip chip-sm">Método completo e acesso destravado</span>
+      <span class="chip chip-sm">1920 × 800 px</span>
+    </div>
+    <div class="card card--wide card--done">
+      <img class="art" src="banners/banner-03.png" alt="Banner de topo 3 — O método completo na sua mão, tudo já liberado" width="1920" height="800" loading="lazy">
+      <span class="badge-done">ARTE FINAL · 1920×800</span>
+    </div>
+    <div class="notes notes--wide">
+      <div class="note-block">
+        <strong>Copy</strong>
+        <div class="copy-lines">
+          <span class="cl1">O MÉTODO COMPLETO</span>
+          <span class="cl2">na sua mão</span>
+          <span class="cl3">TUDO JÁ LIBERADO</span>
+        </div>
+      </div>
+      <p><strong>Estilo / referência de design</strong>Colagem diagonal monocromática, texto à direita. Três recortes fotográficos em diagonal (livro de capa dura, fone de ouvido, chá e alecrim) tratados em duotone verde, filetes dourados finos separando os planos e assinatura Ketox Diet Pro no canto inferior esquerdo.</p>
+      <p><strong>Justificativa</strong>Ativa o efeito de posse — ela já é dona de tudo, nada está trancado — e materializa o produto nos formatos reais que existem: vídeos, áudios e o livro completo.</p>
+    </div>
+  </article>
+  </div>
+</section>
+
+<section id="banners-modulos" class="section">
+  <div class="section-head">
+    <h2 class="section-title">Banners dos módulos — <span>10 artes finais</span></h2>
+    <p class="section-sub">Formato final de cada banner: <b>1080 x 1350 px</b> (vertical 4:5). Os cards abaixo mostram as artes finais na proporção real.</p>
+  </div>
+
+  <div class="grid">
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-01.png" alt="Módulo 01 · Boas-vindas — Você não está sozinha" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>A única aula do módulo ensina como obter ajuda durante a jornada keto — o título transforma "suporte" em acolhimento, que é a primeira necessidade emocional de quem começa.</p>
+      <p><strong>Sugestão visual</strong>duas mãos apoiando uma xícara de chá em luz quente e suave, fundo verde profundo desfocado, clima de recepção e cuidado.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-02.png" alt="Módulo 02 · Fundamentos — A base de tudo" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>Reúne as cinco aulas de introdução — o que é a dieta cetogênica, cetose, energia e equilíbrio — em uma promessa única de fundamento sólido antes da prática.</p>
+      <p><strong>Sugestão visual</strong>abacate cortado ao meio em luz dramática lateral sobre superfície de pedra escura, gotas de azeite e sombra longa, fundo verde profundo.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-03.png" alt="Módulo 03" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>É o módulo mais denso em evidências e histórico da cetogênica na medicina — o título ancora tudo em ciência e estudo, sem sugerir tratamento ou cura de qualquer condição.</p>
+      <p><strong>Sugestão visual</strong>livro antigo aberto sobre mesa escura com folhas verdes e um frasco de vidro âmbar ao lado, luz de janela em ângulo baixo, clima de laboratório clássico.</p>
+      <p class="warn"><strong>Nota de compliance</strong>o banner não deve citar nomes de doenças (epilepsia, diabetes, SOP, autismo). O detalhamento fica só no título das aulas dentro da Hotmart.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-04.png" alt="Módulo 04" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>As duas aulas derrubam crenças erradas sobre a keto e explicam a troca de açúcar por gordura como energia — o título nomeia o inimigo real: a desinformação.</p>
+      <p><strong>Sugestão visual</strong>ovo trincado ao meio revelando a gema intacta sobre fundo escuro texturizado, luz dura de cima, contraste alto entre sombra e destaque dourado.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-05.png" alt="Módulo 05" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>Aqui a teoria vira rotina: o roteiro da mudança e a lista do que comer e do que evitar. O título entrega clareza, que é a dor nº 1 do público na LP.</p>
+      <p><strong>Sugestão visual</strong>prato branco visto de cima com salmão, folhas verdes e azeite, ao lado de um caderno aberto e caneta, luz natural limpa, fundo claro e organizado.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-06.png" alt="Módulo 06" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>As aulas tratam de estratégias simples para manter a dieta e de ajustes que potencializam a rotina — o título promete continuidade sem extremismo, exatamente o posicionamento da marca.</p>
+      <p><strong>Sugestão visual</strong>pedras de rio empilhadas em equilíbrio ao lado de ramos de alecrim, luz lateral suave, fundo verde profundo com neblina leve.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-07.png" alt="Módulo 07" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>As duas aulas falam de manter o resultado após a fase cetogênica e do próximo passo da mudança — o título ataca direto o medo do efeito sanfona, sem prometer emagrecimento.</p>
+      <p><strong>Sugestão visual</strong>calendário de mesa minimalista ao lado de uma fruta e uma garrafa de água, luz de manhã entrando pela janela, sombras longas, tons neutros e verdes.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-08.png" alt="Módulo 08" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>É a tradução direta da única aula do módulo — o equilíbrio na mudança como base do sucesso — e fecha a jornada prática com o pilar mental.</p>
+      <p><strong>Sugestão visual</strong>balança de pratos antiga em bronze sobre fundo escuro, um prato com folhas verdes e outro com castanhas, luz dramática pontual.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-09.png" alt="Módulo 09" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>Três das quatro aulas são áudios exclusivos para ouvir em qualquer lugar, somados aos cálculos nutricionais — o título vende a liberdade de estudar fora da tela.</p>
+      <p><strong>Sugestão visual</strong>fone de ouvido apoiado sobre um caderno com anotações e uma fita métrica enrolada, luz suave de cima, fundo verde escuro texturizado.</p>
+    </div>
+  </article>
+
+  <article class="item">
+    <div class="card card--done">
+      <img class="art" src="artes/modulo-10.png" alt="Módulo 10" width="1080" height="1350">
+      <span class="badge-done">ARTE FINAL · 1080×1350</span>
+    </div>
+    <div class="notes">
+      <p><strong>Justificativa</strong>O módulo entrega um único item de alto valor percebido — o livro completo da jornada cetogênica — e o título trata isso como posse, não como anexo.</p>
+      <p><strong>Sugestão visual</strong>livro de capa dura fechado sobre mesa de madeira escura, folhas verdes e uma xícara ao lado, luz quente de leitura vinda da lateral, clima premium de biblioteca.</p>
+    </div>
+  </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h2>Nota de compliance — Módulo 03</h2>
+  <p>O banner não deve citar nomes de doenças (epilepsia, diabetes, SOP, autismo). O detalhamento fica só no título das aulas dentro da Hotmart.</p>
+  <p>Proibido na arte dos 10 banners:</p>
+  <ul>
+    <li>corpo humano em antes/depois</li>
+    <li>balança marcando peso ou medidas</li>
+    <li>nomes de doenças</li>
+    <li>símbolos médicos (jaleco, estetoscópio, cruz)</li>
+  </ul>
+</footer>
+
+</div>
+</body>
+</html>
